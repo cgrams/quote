@@ -1,0 +1,61 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+	<link rel="icon" href="favicon.ico" sizes="16x16" type="image/png">
+  <title>Get a Quote</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <link rel="stylesheet" href="quoteStyles.css?v=1.0">
+  <link rel="stylesheet" href="boot.css?v=1.0">
+</head>
+
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-offset-0 col-sm-12">
+
+
+	<div class="backButton">
+		<a href="https://portwebsolutions.com.au/">Back</a>
+	</div>	
+	
+	<div class="formContainer">
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+        	<h1>START A PROJECT</h1>
+        </div>
+    </div>
+</div>		
+		
+		<h4>
+			Complete the details below and lets go for coffee...
+		</h4>
+		<form class="contactForm" action="contactform.php" method="post">
+			<input type="text" name="name" placeholder="First name" maxlength="20" required>
+			<input type="text" name="lastname" placeholder="Last name" maxlength="20">			
+			<input type="text" name="mail" placeholder="Your e-mail" maxlength="20">	
+			<input type="text" name="subject" placeholder="Subject" maxlength="20">		
+			<textarea name="message" placeholder="  Message" maxlength="20"></textarea>
+			<br />
+			<button class="button blue" type="submit" name="submit" click='messageAccepted();'>Send Message</button>
+		</form>
+	</div>
+
+</div>
+    </div>
+</div>
+</body>
+
+<script type="text/javascript">
+	const messageAccepted =function(){
+		window.location = "http://www.google.com/";
+		console.log("Message Sent");
+	};
+
+
+</script>
+</html>
